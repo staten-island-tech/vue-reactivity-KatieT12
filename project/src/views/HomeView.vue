@@ -3,8 +3,8 @@
       <DestCard 
       v-for="destination in destinations" 
       :key="destination.name" 
-      :Destination ="destination"
-      />
+      :Destination ="destination"/>
+      <button></button>
   </div>
 </template>
 
@@ -50,4 +50,6 @@ const destinations = [
       },
     ]
 ]
+
 </script>
+<style scoped></style>
