@@ -4,7 +4,6 @@
       v-for="destination in destinations" 
       :key="destination.name" 
       :Destination ="destination"/>
-      <button></button>
   </div>
 </template>
 
@@ -13,10 +12,10 @@ import DestCard from "@/components/DestCard.vue";
 const destinations = [
       [
       {
-        name: "Venetian Renaissance",
+        name: "Matchbox 9 Car Pack",
         International: true,
         price: 1300,
-        img: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80&quot"
+        img: "https://target.scene7.com/is/image/Target/GUEST_161d30d4-d43f-4d79-8fdc-69009c03ddc5?wid=488&hei=488&fmt=pjpeg"
       },
       {
         name: "Swiss Mountain Getaway",
@@ -52,4 +51,12 @@ const destinations = [
 ]
 
 </script>
-<style scoped></style>
+<style scoped>
+@media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>
