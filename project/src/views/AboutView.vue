@@ -1,11 +1,13 @@
 <template>
- <div class="about"> <!-- dolls -->
-    <DestCard 
+  <div>
+      <DestCard 
       v-for="destination in destinations" 
       :key="destination.name" 
       :Destination ="destination"/>
+      <button></button>
   </div>
 </template>
+
 <script setup>
 import DestCard from "@/components/DestCard.vue";
 const destinations = [

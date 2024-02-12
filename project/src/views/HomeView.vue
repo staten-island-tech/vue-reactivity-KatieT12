@@ -4,6 +4,7 @@
       v-for="destination in destinations" 
       :key="destination.name" 
       :Destination ="destination"/>
+      <button></button>
   </div>
 </template>
 
@@ -52,11 +53,11 @@ const destinations = [
 
 </script>
 <style scoped>
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
     display: flex;
     align-items: center;
   }
-}
+} */
 </style>

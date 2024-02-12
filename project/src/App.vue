@@ -1,22 +1,22 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
   <header>
-    <h1 class="title">Toys</h1>
+    <h1 class="title">Cars</h1>
     
-    <div class="cart">
+    <!-- <div class="cart">
         <h1>Cart</h1>
-      </div>
+      </div> -->
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     
     <div class="wrapper">
 
       <nav>
-        <RouterLink to="/">Cars</RouterLink>
-        <RouterLink to="/about">Dolls</RouterLink>
-        <Router-view></Router-view>
+        <RouterLink to="/about">Products</RouterLink>
+        <RouterLink to="/about">Cart</RouterLink>
+        <Router-view />
       </nav>
 
       

@@ -24,5 +24,6 @@ function increment(){
 img{
     width: 250px;
     height: 300px;
+    object-fit: cover;
 }
 </style>
