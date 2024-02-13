@@ -15,7 +15,7 @@
 
       <nav>
         <RouterLink to="/about">Products</RouterLink>
-        <RouterLink to="/about">Cart</RouterLink>
+        <RouterLink to="/">Cart</RouterLink>
         <Router-view />
       </nav>
 
