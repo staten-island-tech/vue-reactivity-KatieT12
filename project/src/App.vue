@@ -14,8 +14,8 @@
     <div class="wrapper">
 
       <nav>
-        <RouterLink to="/about">Products</RouterLink>
-        <RouterLink to="/">Cart</RouterLink>
+        <RouterLink to="/products">Products</RouterLink>
+        <RouterLink to="/cart">Cart</RouterLink>
         <Router-view />
       </nav>
 
