@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h2>{{ Destination.name }}</h2>
-        <img :src="Destination.img" alt=""/>
+        <h2>{{ name }}</h2>
+        <img :src="img" alt=""/>
         <h3>{{ clicked }}</h3>
         <button @click="increment">Click Me</button>
     </div>
@@ -10,7 +10,9 @@
 <script setup>
 import {ref} from "vue";
 const props = defineProps({
-    Destination: Object,
+    name: String,
+    img: String,
+
 });
 
 //clicker logic
