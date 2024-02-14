@@ -4,7 +4,8 @@
       v-for="destination in destinations" 
       :key="destination" 
       :name ="destination.name"
-      :img="destination.img"/>
+      :img="destination.img"
+      :price="destination.price"/>
 
       <button></button>
   </div>
@@ -13,7 +14,7 @@
 <script setup>
 import DestCard from "@/components/DestCard.vue";
 const destinations = [
-      [
+      
       {
         name: "Matchbox 9 Car Pack",
         International: true,
@@ -51,7 +52,7 @@ const destinations = [
         img: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&quot"
       },
     ]
-]
+
 
 </script>
 <style scoped>
