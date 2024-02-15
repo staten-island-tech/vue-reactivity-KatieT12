@@ -11,7 +11,6 @@
 <script setup>
 import DestCard from "@/components/DestCard.vue";
 const destinations = [
-      [
       {
         name: "2015 Volkswagen Beetle",
         Used: true,
@@ -49,15 +48,14 @@ const destinations = [
         img: "https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXABuN9dMGF4tl3U0%25z8rMHIspbWvanYb%255y%25XlvBCR8Z8CMj%25AH3kS6lm03mO1SZWjAgTbMtMdko5xjxiDLFC1aP2bsqYSghB0iO5MjAUHcTCkaToKfyUxFkprU9pNfqB0ubdMG0VPni2uFcLUB"
       },
     ]
-]
 
 </script>
 <style>
 @media (min-width: 1024px) {
-  .about {
+  .products {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    /* align-items: row; */
   }
 }
 </style>
