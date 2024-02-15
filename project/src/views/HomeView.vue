@@ -1,66 +1,29 @@
 <template>
   <div>
-      <DestCard 
-      v-for="destination in destinations" 
-      :key="destination" 
-      :name ="destination.name"
-      :img="destination.img"
-      :price="destination.price"/>
-
-      <button></button>
+    <DestCard 
+      v-for="product in products" 
+      :key="product.name" 
+      :Destination ="product"/>
+      <!-- <ul>
+        <li v-for="product in products" :key="product.name">
+        {{ product.name }}
+        <button @click="removeProduct(todo)>X</button>
+        </li>
+      </ul> -->
   </div>
 </template>
 
 <script setup>
-import DestCard from "@/components/DestCard.vue";
-const destinations = [
-      
+import DestCard from "@/components/cartCards.vue";
+//list of products added by button//
+const products = [
       {
-        name: "Matchbox 9 Car Pack",
-        International: true,
-        price: 1300,
-        img: "https://target.scene7.com/is/image/Target/GUEST_161d30d4-d43f-4d79-8fdc-69009c03ddc5?wid=488&hei=488&fmt=pjpeg"
-      },
-      {
-        name: "Swiss Mountain Getaway",
-        International: true,
-        price: 800,
-        img: "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1476&q=80&quot"
-      },
-      {
-        name: "Ibizan Coastal Vacation",
-        International: true,
-        price: 1200,
-        img: "https://images.unsplash.com/photo-1547138494-97041dec734b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80&quot"
-      },
-      {
-        name: "Hawaiian Vacation",
-        International: false,
-        price: 900,
-        img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80&quot"
-      },
-      {
-        name: "Cascade Mountains",
-        International: false,
-        price: 400,
-        img: "https://images.unsplash.com/photo-1511497584788-876760111969?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80&quot"
-      },
-      {
-        name: "Egyptian Exploration",
-        International: true,
-        price: 800,
-        img: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&quot"
-      },
+        name: "Porsche 911 GT3 RS",
+        Used: false,
+        price: 219797,
+        img: "https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXABuN9dMGF4tl3U0%25z8rMHIspbWvanYb%255y%25XlvBCR8Z8CMj%25AH3kS6lm03mO1SZWjAgTbMtMdko5xjxiDLFC1aP2bsqYSghB0iO5MjAUHcTCkaToKfyUxFkprU9pNfqB0ubdMG0VPni2uFcLUB"
+      }
     ]
-
-
 </script>
 <style scoped>
-/* @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-} */
 </style>

@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h2>{{ Destination.name }}</h2>
-        <img :src="Destination.img" alt=""/>
+        <h2>{{ Product.name }}</h2>
+        <img :src="Product.img" alt=""/>
         <h3>Number Currently in Cart: {{ clicked }}</h3>
-        <button @click="addtoCart">Add to Cart</button>
+        <button @click="removefromCart">Remove From Cart</button>
     </div>
 </template>
 
@@ -11,7 +11,7 @@
 import {ref} from "vue";
 
 const props = defineProps({
-    Destination: Object,
+    Product: Object,
 });
 
 //clicker logic
@@ -21,8 +21,8 @@ const props = defineProps({
 // }
 
 const clicked= ref(0)
-function addtoCart(){
-    clicked.value++
+function removefromCart(){
+    clicked.value--
 }
 </script>
 

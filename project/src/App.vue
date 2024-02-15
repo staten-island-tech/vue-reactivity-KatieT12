@@ -14,7 +14,7 @@
     <div class="wrapper">
 
       <nav>
-        <RouterLink to="/about">Products</RouterLink>
+        <RouterLink to="/products">Products</RouterLink>
         <RouterLink to="/">Cart</RouterLink>
         <Router-view />
       </nav>
@@ -26,18 +26,4 @@
 </template>
 
 <style scoped>
-
-.title{
-  margin-left: auto; margin-right: auto;
-}
-.cart{
-  background-color: aquamarine;
-  height: 150px;
-  
-  /* display: flex;
-  align-items: right; */
-  text-align: left;
-  /* float: right; */
-
-}
 </style>
