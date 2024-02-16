@@ -11,7 +11,7 @@
 import DestCard from "@/components/DestCard.vue";
 const products = [
       {
-        name: "2015 Volkswagen Beetle",
+        name: "Dough",
         Used: true,
         price: 18998,
         img: "https://img2.carmax.com/assets/25099732/hero.jpg?width=800&height=450"
