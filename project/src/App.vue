@@ -33,26 +33,40 @@
   --offwhite: #f1f8ff;
   --blue: #0073ff;
 }
+.listing{
+  display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    flex-direction: row;
+    border-style: solid;
+    border-color: var(--blue);
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
 .container{
   background-color: var(--offwhite);
   color:var(--blue);
   width: 20%; height: 100%;
   float: right;
   position: absolute;
-  top: 10rem;
+  top: 11rem;
   right: 2rem;
   overflow: scroll;
   overflow-y: auto;
-  border: black;
+  overflow-x: hidden;
   border-radius: 1rem;
-  border-color: black;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-style: solid;
   border-color: var(--blue);
 }
-.title, .cartTitle, nav{
+.title{
+  font: 60px; text-align: center;
+}
+.cartTitle, nav{
   text-align: center;
 }
 .checkOutbtn{

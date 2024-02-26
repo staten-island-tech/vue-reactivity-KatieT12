@@ -3,7 +3,7 @@
       <DestCard
       v-for="product in products"
       :key="product.name"
-      :Destination ="product"/>
+      :product ="product"/>
   </div>
 </template>
 
@@ -46,4 +46,5 @@ const products = [
 
 </script>
 <style>
+
 </style>
