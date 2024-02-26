@@ -1,11 +1,12 @@
 <template>
   <div>
-      <DestCard 
-      v-for="product in products" 
-      :key="product.name" 
+      <DestCard
+      v-for="product in products"
+      :key="product.name"
       :Destination ="product"/>
   </div>
 </template>
+
 
 <script setup>
 import DestCard from "@/components/DestCard.vue";
@@ -48,13 +49,7 @@ const products = [
       },
     ]
 
+
 </script>
 <style>
-@media (min-width: 1024px) {
-  .product {
-    min-height: 100vh;
-    display: flex;
-    /* align-items: row; */
-  }
-}
 </style>
