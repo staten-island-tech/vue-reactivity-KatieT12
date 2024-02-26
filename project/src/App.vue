@@ -29,9 +29,13 @@
 
 
 <style scoped>
+:root{
+  --offwhite: #f1f8ff;
+  --blue: #0073ff;
+}
 .container{
-  background-color: rgb(255, 255, 255);
-  color: #044B7F;
+  background-color: var(--offwhite);
+  color:var(--blue);
   width: 20%; height: 100%;
   float: right;
   position: absolute;
@@ -40,19 +44,19 @@
   overflow: scroll;
   overflow-y: auto;
   border: black;
-  border-radius: 3rem;
+  border-radius: 1rem;
   border-color: black;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-style: solid;
-  border-color: #044B7F;
+  border-color: var(--blue);
 }
 .title, .cartTitle, nav{
   text-align: center;
 }
 .checkOutbtn{
-  background-color: #044B7F;
+  background-color:var(--blue);
   color: white;
   border-radius: 1rem;
   margin-top: 3rem;
@@ -65,15 +69,5 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
-/* .listing{
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5rem auto;
-    padding: 5px;
-    flex-direction: row;
-} */
-
 
 </style>

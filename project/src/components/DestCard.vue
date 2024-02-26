@@ -34,7 +34,6 @@ function addtoCart(){
        "beforeend",
         `<div class = "card">
         <h3 class="name">Name: ${props.name}</h3>
-        <h4 class="used">Used: ${props.Used}</h4>
         <img src=${props.img}> </img>
         <h4 class="price">Price: ${props.price}</h4>
         <button type ="button" class="Remove">Remove Item</button>
@@ -54,12 +53,27 @@ function removeItem(){
 
 
 <style scoped>
+
 img{
     width: 20%;
     height: 100%;
     object-fit: cover;
 }
-.Remove{
-    margin-bottom: 100rem;
+button{
+background-color: #0073ff;
+color: white;
+border-radius: 1rem;
+width: 20rem; height: 50px;
+font-size: 1.5rem;
+margin-bottom: 3rem;
+}
+.Remove{ /*not working */
+background-color: #0073ff;
+  color: white;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  width: 20rem; height: 50px;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 </style>
