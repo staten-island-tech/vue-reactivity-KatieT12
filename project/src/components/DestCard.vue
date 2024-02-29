@@ -5,7 +5,9 @@
         <h3> Price: {{ product.price }}</h3>
         <button @click="addtoCart">Add to Cart</button>
 
-        <form @submit.prevent="addTodo">
+        <ChildComp @response="(msg) => childMsg = msg" />
+  <p>{{ childMsg }}</p>
+        <!-- <form @submit.prevent="addTodo">
     <input v-model="newTodo" required placeholder="new todo">
     <button>Add Todo</button>
   </form>
@@ -14,7 +16,7 @@
       {{ todo.text }}
       <button @click="removeTodo(todo)">X</button>
     </li>
-  </ul>
+  </ul> -->
   
     </div>
 </template>
@@ -22,6 +24,9 @@
 
 <script setup>
 import {ref} from "vue";
+import ChildComp from './cartCards.vue'
+
+const childMsg = ref('No child msg yet')
 const props = defineProps({
     product: Object,
 });

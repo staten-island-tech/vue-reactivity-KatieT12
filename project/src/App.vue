@@ -17,11 +17,11 @@
       </div>
 
 
-    <div class="container">
+    <!-- <div class="container">
       <h1 class="cartTitle">Cart</h1>
       <div class="itemsinCart"></div>
       <button class="checkOutbtn">Check Out</button>
-    </div>
+    </div> -->
   </header>
 
 
@@ -29,10 +29,11 @@
 
 
 <style scoped>
-:root{
+/* :root{
   --offwhite: #f1f8ff;
   --blue: #0073ff;
 }
+*/
 .listing{
   display: flex;
     width: 75%;
@@ -45,6 +46,7 @@
     border-radius: 1rem;
     margin-top: 1.5rem;
 }
+/*
 .container{
   background-color: var(--offwhite);
   color:var(--blue);
@@ -63,9 +65,11 @@
   border-style: solid;
   border-color: var(--blue);
 }
+*/
 .title{
   font: 60px; text-align: center;
 }
+/*
 .cartTitle, nav{
   text-align: center;
 }
@@ -82,6 +86,6 @@
 display: flex;
 flex-direction: column;
 align-items: center;
-}
+} */
 
 </style>
