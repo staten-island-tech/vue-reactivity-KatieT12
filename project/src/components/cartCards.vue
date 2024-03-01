@@ -13,6 +13,7 @@ const itemsinCart = [
       <h1 class="cartTitle">Cart</h1>
       <div class="itemsinCart">
         <p>No Items in Cart</p>
+        
       </div>
       <button class="checkOutbtn">Check Out</button>
     </div>

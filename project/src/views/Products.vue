@@ -4,12 +4,14 @@
       v-for="product in products"
       :key="product.name"
       :product ="product"/>
+      <h2 v-for="item in store.cart" :key="item.name">{{ item.name }}</h2>
   </div>
 </template>
 
 
 <script setup>
 import DestCard from "@/components/DestCard.vue";
+import { store} from '../stores/cart.js'
 const products = [
       {
         name: "Porsche Panamera 4",

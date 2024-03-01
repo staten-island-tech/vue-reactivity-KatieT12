@@ -33,13 +33,9 @@ const props = defineProps({
 });
 
 function addtoCart() {
-  todos.value.push({ id: id++, text: newTodo.value })
-  newTodo.value = ''
+ cartItems.push(product)
 }
 
-function removefromCart(todo) {
-  todos.value = todos.value.filter((t) => t !== todo)
-}
 
 
 
