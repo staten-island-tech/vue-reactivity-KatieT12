@@ -2,7 +2,9 @@
 
 <script setup>
 // import { products } from "../views/Products.vue"
-const itemsinCart = [ ]
+const itemsinCart = [
+
+ ]
 
 </script>
 
@@ -10,7 +12,7 @@ const itemsinCart = [ ]
    <div class="container">
       <h1 class="cartTitle">Cart</h1>
       <div class="itemsinCart">
-        itemsinCart
+        <p>No Items in Cart</p>
       </div>
       <button class="checkOutbtn">Check Out</button>
     </div>

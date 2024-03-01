@@ -26,19 +26,11 @@
 import {ref} from "vue";
 import ChildComp from './cartCards.vue'
 
-const childMsg = ref('No child msg yet')
+
+
 const props = defineProps({
     product: Object,
 });
-// give each todo a unique id
-let id = 0
-
-const newTodo = ref('')
-const todos = ref([
-  { id: id++, text: 'Learn HTML' },
-  { id: id++, text: 'Learn JavaScript' },
-  { id: id++, text: 'Learn Vue' }
-])
 
 function addtoCart() {
   todos.value.push({ id: id++, text: newTodo.value })
