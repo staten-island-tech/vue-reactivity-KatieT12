@@ -3,6 +3,7 @@
         <h2>{{ product.name }}</h2>
         <img :src="product.img" alt=""/>
         <h3> Price: {{ product.price }}</h3>
+        <h3>Number in Cart: {{ clicked }}</h3>
         <button @click="addtoCart">Add to Cart</button>
 
         <ChildComp @response="(msg) => childMsg = msg" />
@@ -34,7 +35,7 @@ const props = defineProps({
 
 const clicked = ref('0')
 function addtoCart() {
-
+clicked.value++
 }
 
 
