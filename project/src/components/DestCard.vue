@@ -32,14 +32,11 @@ const props = defineProps({
     product: Object,
 });
 
+const clicked = ref('0')
 function addtoCart() {
-  todos.value.push({ id: id++, text: newTodo.value })
-  newTodo.value = ''
+
 }
 
-function removefromCart(todo) {
-  todos.value = todos.value.filter((t) => t !== todo)
-}
 
 
 
